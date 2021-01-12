@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "mock": "node_modules/.bin/json-server --watch ./mock/db.js --config ./mock/config.json",
+        "react-app": "cd diagnostics && yarn start",
+        "start": "node_modules/.bin/concurrently \"yarn mock\" \"yarn react-app\""
+    },
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@material-ui/core": "^4.11.2",
+        "@material-ui/icons": "^4.11.2",
+        "axios": "^0.21.1",
+        "concurrently": "5.3.0",
+        "json-server": "0.16.3",
+        "react-router-dom": "^5.2.0"
+    }
+}
